@@ -260,7 +260,7 @@ function CoinCornerCheckout()
                 'Nonce' => $nonce,
                 'InvoiceAmount' => $amount,
                 'NotificationURL' => $this->notify_url,
-                'ItemDescription' => implode($description, ', '),
+                'ItemDescription' => implode(', ',$description),
                 'ItemCode' => '',
                 'SuccessRedirectURL' => $ReturnUrl,
                 'FailRedirectURL' => $FailURL,
